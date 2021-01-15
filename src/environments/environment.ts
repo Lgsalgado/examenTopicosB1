@@ -5,6 +5,15 @@
 export const environment = {
   production: false
 };
+export const firebaseConfig = {
+  apiKey: 'AIzaSyAy7wMD3mdXjfgI1Gtik6ZeLF816dwrhUg',
+  authDomain: 'examentopicos-83a9c.firebaseapp.com',
+  databaseURL: 'https://examentopicos-83a9c-default-rtdb.firebaseio.com',
+  projectId: 'examentopicos-83a9c',
+  storageBucket: 'examentopicos-83a9c.appspot.com',
+  messagingSenderId: '597122650953',
+  appId: '1:597122650953:web:786dd4b1d6a5d7f09b8098'
+};
 
 /*
  * For easier debugging in development mode, you can import the following file
