@@ -1,12 +1,24 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Blank
+      Chat Live
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let chat of chatRooms" (click)="openChat(chat)">
+      <ion-avatar slot="start">
+        <ion-img src="https://picsum.photos/200/300"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        <h2><b>{{chat.name}} </b></h2>
+        <p>{{chat.descripcion}}</p>
+      </ion-label>
+    </ion-item>
+
+  </ion-list>
   <img class="icon" src="assets/icon/charla.svg">
   <br>
   <ion-button (click)="onLogout()" expand="block">Cerrar sesión</ion-button>

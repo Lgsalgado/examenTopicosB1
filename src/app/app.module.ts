@@ -12,13 +12,16 @@ import {firebaseConfig} from '../environments/environment';
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFirestoreModule} from '@angular/fire/firestore';
+import {ChatComponent} from './components/chat/chat.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent],
-  entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,
+  declarations: [AppComponent, ChatComponent],
+  entryComponents: [ChatComponent],
+  imports: [FormsModule, BrowserModule, IonicModule.forRoot(), AppRoutingModule,
   AngularFireModule.initializeApp(firebaseConfig),
-  AngularFireAuthModule],
+  AngularFireAuthModule, AngularFirestoreModule],
   providers: [
     StatusBar,
     SplashScreen,
