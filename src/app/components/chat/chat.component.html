@@ -12,15 +12,15 @@
   <ion-content padding>
     <div *ngIf="room">
       <ion-card *ngFor="let msg of room.messages">
-        <ion-card-content>
-          {{msg.content}}
+        <ion-card-content>{{chat.name}} dice:
+          <ion-item>{{msg.content}}</ion-item>
         </ion-card-content>
       </ion-card>
     </div>
   </ion-content>
   <ion-footer padding>
     <ion-item>
-      <ion-textarea [(ngModel)]="msg" ></ion-textarea>
+      <ion-textarea [(ngModel)]="msg"  placeholder="Escribe Algo..."></ion-textarea>
       <ion-button color="success" (click)="sendMessage()">
         <ion-icon name="send"></ion-icon>
       </ion-button>

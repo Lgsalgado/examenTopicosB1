@@ -18,7 +18,7 @@ export class ChatsService {
 
   constructor(private db: AngularFirestore) { }
   public getChatRooms(){
-    return this.db.collection('chatRoom').snapshotChanges().pipe(map(rooms => {
+    return this.db.collection('users').snapshotChanges().pipe(map(rooms => {
       return rooms.map(a => {
         const data = a.payload.doc.data() as chat;
         data.id = a.payload.doc.id;
@@ -27,10 +27,10 @@ export class ChatsService {
     }));
   }
   getChatRoom(chat_id : string){
-    return this.db.collection('chatRoom').doc(chat_id).valueChanges()
+    return this.db.collection('users').doc(chat_id).valueChanges()
   }
   sendMsgToFirebase(message: message, chat_id: string){
-    this.db.collection('chatRoom').doc(chat_id).update({
+    this.db.collection('users').doc(chat_id).update({
       messages: firestore.FieldValue.arrayUnion(message)
     })
   }
