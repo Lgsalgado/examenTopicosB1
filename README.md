@@ -46,7 +46,9 @@ npm install @types/crypto-js --save
 
 * [IONIC](https://ionicframework.com/) - El framework web usado
 * [Npm](https://www.npmjs.com/) - Manejador de dependencias
-* [Firebase](https://firebase.google.com/?gclid=EAIaIQobChMIz7bQrPif7gIVVuvjBx2C7wzlEAAYASAAEgJ0oPD_BwE) - Database realtime
+* [Firebase](https://firebase.google.com/?gclid=EAIaIQobChMIz7bQrPif7gIVVuvjBx2C7wzlEAAYASAAEgJ0oPD_BwE) - Database 
+* [Cordova](https://cordova.apache.org/) - Cordova dependencias
+
 
 
 ## ENTREGABLES 
