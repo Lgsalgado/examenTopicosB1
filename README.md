@@ -53,7 +53,9 @@ npm install @types/crypto-js --save
 
 ## ENTREGABLES 
 * [APK](https://drive.google.com/drive/folders/1Z3w-d6Zjj7F4k9PjEtIvDm-gHPfeczVH?usp=sharing) - Repositorio apk.
-* [VIDEO](https://drive.google.com/drive/folders/1Z3w-d6Zjj7F4k9PjEtIvDm-gHPfeczVH?usp=sharing) - Video demostrativo app.
+* [VIDEO](https://www.youtube.com/watch?v=GaROgPFLa5Q) - Video demostrativo app, click en la imagen.  
+                                                         [![VIDEO](https://img.youtube.com/vi/GaROgPFLa5Q/0.jpg)](https://www.youtube.com/watch?v=GaROgPFLa5Q)
+
 
 
 
