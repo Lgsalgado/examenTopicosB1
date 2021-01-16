@@ -3,7 +3,7 @@
 Aplicación híbrida chat con ionic-angular-cordova y autenticación.
 
 ## Creación de componentes 🚀
-_Para el manejo de las diferentes funcionalidades se creo los screen para login, registro y el chat_
+_Para el manejo de las diferentes funcionalidades se creó los screen para login, registro y el chat_
 _adaptando a las especificaciones solicitadas por el docente_
 ```
 ionic generate page components/login
