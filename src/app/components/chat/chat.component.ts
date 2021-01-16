@@ -37,7 +37,7 @@ export class ChatComponent implements OnInit {
   sendMessage(){
     const mensaje: message ={
       //content: this.msg,
-      content: crypto.AES.encrypt(this.msg,).toString(),
+      content: crypto.AES.encrypt(this.msg,'123456').toString(),
       type: 'text',
       date: new Date()
     }

@@ -1,5 +1,7 @@
 {
   "name": "examenB1",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
